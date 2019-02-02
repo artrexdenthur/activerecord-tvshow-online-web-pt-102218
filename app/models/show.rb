@@ -1,4 +1,4 @@
-class Show < ActiveRecord::Base
+class Show < ApplicationRecord
   
   def highest_rating
     Show.maximum(:rating)
