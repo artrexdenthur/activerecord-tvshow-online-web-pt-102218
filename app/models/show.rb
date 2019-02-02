@@ -5,6 +5,7 @@ class Show < ActiveRecord::Base
   end
   
   def most_popular_show
-    Show.ta
+    Show.highest_rating.take
+  end
   
 end
